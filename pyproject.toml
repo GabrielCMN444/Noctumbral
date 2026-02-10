@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noctumbral"
+version = "0.1.0"
+description = "Noctumbral — Noir Forensic Assistant"
+authors = [{name="Gabriel Campos"}]
+dependencies = ["typer>=0.9", "rich>=13.0"]
+
+[project.scripts]
+noctumbral = "noctumbral.main:app"
+
